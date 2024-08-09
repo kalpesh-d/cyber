@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar"
+import Payment from "./components/Payment"
 import Steps from "./components/Steps"
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       </header>
       <main>
         <Steps />
+        <Payment />
       </main>
     </>
   )

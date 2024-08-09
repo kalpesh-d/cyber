@@ -12,7 +12,7 @@ const NavBar = () => {
 
       <div className='flex items-center gap-x-2 border hidden lg:flex bg-stone-200 p-2 rounded-md'>
         <MagnifyingGlassIcon className='size-4 text-gray-600' />
-        <input type="text" placeholder='Search' className='bg-stone-200 text-sm w-80 active:ou tline-0' />
+        <input type="text" placeholder='Search' className='bg-stone-200 text-sm w-80 focus-visible:outline-0' />
       </div>
 
       <button className='block md:hidden'>
