@@ -11,8 +11,13 @@ function App() {
       </header>
       <main>
         <Steps />
-        <Summary />
-        <Payment />
+
+        <div className="w-full bg-stone-100 p-8">
+          <section className="container mx-auto grid grid-cols-2 justify-center px-10">
+            <Summary />
+            <Payment />
+          </section>
+        </div>
       </main>
     </>
   )

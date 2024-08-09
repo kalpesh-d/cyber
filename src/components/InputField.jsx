@@ -5,7 +5,7 @@ const InputField = ({ type, placeholder, className = '', maxLength, pattern }) =
     <input
       type={type}
       placeholder={placeholder}
-      className={`my-1 px-2 h-8 lg:max-w-lg border focus-visible:outline-0 text-xs ${className} rounded-md`}
+      className={`my-1 px-2 h-12 lg:max-w-lg border focus-visible:outline-0 text-xs ${className} rounded-md`}
       maxLength={maxLength}
       pattern={pattern}
     />

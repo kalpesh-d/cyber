@@ -20,7 +20,7 @@ const Summary = () => {
   ]
 
   return (
-    <section className="container mx-auto rounded-md border p-6">
+    <section className="rounded-md border p-6 bg-white">
       <p className="font-semibold text-lg py-1">Summary</p>
 
       {orders.map((order, index) => (
