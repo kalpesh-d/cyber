@@ -11,9 +11,8 @@ function App() {
       </header>
       <main>
         <Steps />
-
-        <div className="w-full bg-stone-100 p-8">
-          <section className="container mx-auto grid grid-cols-2 justify-center px-10">
+        <div className="w-full bg-stone-100 lg:p-8">
+          <section className="container mx-auto grid lg:grid-cols-2 justify-center lg:px-10">
             <Summary />
             <Payment />
           </section>

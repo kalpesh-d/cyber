@@ -20,7 +20,7 @@ const Summary = () => {
   ]
 
   return (
-    <section className="rounded-md border p-6 bg-white">
+    <section className="rounded-md border p-6 bg-white hidden lg:block">
       <p className="font-semibold text-lg py-1">Summary</p>
 
       {orders.map((order, index) => (
