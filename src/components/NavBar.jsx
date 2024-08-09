@@ -7,7 +7,7 @@ import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 const NavBar = () => {
   return (
-    <nav className='container mx-auto py-3 flex justify-around items-center'>
+    <nav className='container mx-auto py-3 flex justify-between md:justify-around items-center px-3'>
       <img src={Cyber} className="h-5" alt="Cyber" />
 
       <div className='flex items-center gap-x-2 border hidden lg:flex bg-stone-200 p-2 rounded-md'>
