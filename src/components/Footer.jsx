@@ -1,4 +1,8 @@
 import CyberWhite from '../assets/CyberWhite.svg';
+import Twitter from '../assets/Twitter.svg';
+import Tiktok from '../assets/Tiktok.svg';
+import Facebook from '../assets/Facebook.svg';
+import Instagram from '../assets/Instagram.svg';
 
 const Footer = () => {
   const services = [
@@ -20,9 +24,9 @@ const Footer = () => {
   ];
 
   const List = ({ title, items }) => (
-    <section className='flex flex-col items-center py-5'>
+    <section className='flex flex-col items-center gap-4 md:items-start md:ml-16'>
       <p className='font-semibold text-lg'>{title}</p>
-      <ul className='flex flex-col items-center'>
+      <ul className='flex flex-col items-center md:items-start'>
         {items.map((item, index) => (
           <li className='py-2 text-gray-300' key={index}>{item}</li>
         ))}
@@ -31,15 +35,22 @@ const Footer = () => {
   );
 
   return (
-    <section className='container mx-auto px-2 py-8'>
-      <section className='gap-6 flex flex-col items-center p-4'>
-        <img src={CyberWhite} alt="Cyber" />
-        <p className='text-gray-300 leading-7 text-center'>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
-      </section>
+    <section className='container mx-auto py-8'>
+      <div className='grid grid-cols-1 md:grid-cols-3 md:px-12 gap-8 md:gap-0'>
+        <section className='gap-8 flex flex-col items-center md:items-start h-full'>
+          <img src={CyberWhite} alt="Cyber" />
+          <p className='text-gray-300 leading-7 text-center md:text-left'>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+        </section>
 
-      <div className='flex flex-col justify-center items-center'>
         <List title='Services' items={services} />
         <List title='Assistance to the buyer' items={assistances} />
+
+        <section className='flex gap-4 justify-center md:justify-start'>
+          <img className='size-6' src={Twitter} alt="Twitter" />
+          <img className='size-6' src={Facebook} alt="Facebook" />
+          <img className='size-6' src={Tiktok} alt="Tiktok" />
+          <img className='size-6' src={Instagram} alt="Instagram" />
+        </section>
       </div>
     </section>
   );
