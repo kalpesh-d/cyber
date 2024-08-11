@@ -3,7 +3,7 @@ import InputField from "./InputField"
 
 const Payment = () => {
   return (
-    <section className="px-2 sm:px-8 mx-auto py-4">
+    <section className="px-2 sm:px-8 mx-auto py-10">
       <p className="font-semibold text-lg py-4">Payment</p>
       <div className="flex gap-x-12 text-xs sm:text-sm">
         <button className="border-b-2 border-black font-semibold">Credit Card</button>

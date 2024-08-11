@@ -35,7 +35,7 @@ const Footer = () => {
   );
 
   return (
-    <section className='container mx-auto py-8'>
+    <section className='container mx-auto py-16'>
       <div className='grid grid-cols-1 md:grid-cols-3 md:px-12 gap-8 md:gap-0'>
         <section className='gap-8 flex flex-col items-center md:items-start h-full'>
           <img src={CyberWhite} alt="Cyber" />
