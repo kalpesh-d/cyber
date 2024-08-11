@@ -1,3 +1,4 @@
+import Footer from "./components/Footer"
 import NavBar from "./components/NavBar"
 import Payment from "./components/Payment"
 import Steps from "./components/Steps"
@@ -18,6 +19,9 @@ function App() {
           </section>
         </div>
       </main>
+      <footer className="text-white bg-[#181313]">
+        <Footer />
+      </footer>
     </>
   )
 }
